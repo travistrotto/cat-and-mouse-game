@@ -25,6 +25,7 @@ function spawnCat() {
     }, Math.floor(Math.random() * 3000)); // between 0 to 3 seconds
 }
 
+
 $(document).ready(function () {
     // Spawn new cats every 5 seconds
     setInterval(spawnCat, 5000);
