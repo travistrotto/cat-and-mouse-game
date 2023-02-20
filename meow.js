@@ -1,6 +1,6 @@
 function spawnCat() {
     // Create new cat element and set initial position
-    var newCat = $('<div class="cat">🐱</div>').appendTo('body');
+    var newCat = $('<div class="cat">🐱</div>').appendTo('.cat-container');
     var left = Math.floor(Math.random() * (window.innerWidth - newCat.width()));
     var top = Math.floor(Math.random() * (window.innerHeight - newCat.height()));
     newCat.css('left', left + 'px');
@@ -24,7 +24,6 @@ function spawnCat() {
         }, speed);
     }, Math.floor(Math.random() * 3000)); // between 0 to 3 seconds
 }
-
 
 $(document).ready(function () {
     // Spawn new cats every 5 seconds
