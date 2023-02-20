@@ -31,6 +31,15 @@ h4 {
     display: inline;
 }
 
+.cheese {
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
 .cat {
     font-size: 10em;
     position: absolute;
@@ -38,6 +47,15 @@ h4 {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+
+.cheese,
+.cat {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 /* =========================================
@@ -62,6 +80,7 @@ h4 {
         background-color: white;
     }
 
+    h4,
     a {
         color: black;
     }
